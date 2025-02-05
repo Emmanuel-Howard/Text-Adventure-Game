@@ -25,12 +25,12 @@ def choice1():
     time.sleep(2)
     print("Looking up ahead you can see 2 paths. One lead to a giant castle. The other to a small cabin.")
     while True:
-        firstchoice = input("Do you head toward the castle or the hut?: ").strip().lower()
+        firstchoice = input("Do you head toward the castle or the cabin?: ").strip().lower()
         if firstchoice == "castle":
             print("You turn left and head towards the castle looming in the distance.")
             return firstchoice
-        elif firstchoice == "hut":
-            print("You turn right and head towards the hut.")
+        elif firstchoice == "cabin":
+            print("You turn right and head towards the cabin.")
             return firstchoice
         else:
             print("Please choose 'castle' or 'cabin'")
