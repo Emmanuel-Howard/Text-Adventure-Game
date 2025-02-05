@@ -22,13 +22,39 @@ def choice1():
     time.sleep(2)
     print("You're pretty sure they are...")
     time.sleep(2)
-    print("Looking up ahead you can see 2 paths. One lead to a giant castle. The other to a small hut.")
-    firstchoice = input("Do you head toward the castle or the hut?: ")
+    print("Looking up ahead you can see 2 paths. One lead to a giant castle. The other to a small cabin.")
+    while True:
+        firstchoice = input("Do you head toward the castle or the hut?: ").lower()
+        if firstchoice == "castle":
+            print("You turn left and head towards the castle looming in the distance.")
+            break
+        elif firstchoice == "hut":
+            print("You turn right and head towards the hut.")
+            break
+        else:
+            print("Please choose 'castle' or 'cabin'")
+
+def choicecastle():
+    print("You see the castle")
+
+def choicecabin():
+    print("You see the cabin")
+
 
 # Main game loop
 def main():
-    intro()
-    choice1()
+
+    global firstchoice
+
+    run = True
+
+    while run:
+        intro()
+        choice1()
+        if firstchoice == "castle":
+            choicecastle()
+        elif firstchoice == "cabin":
+            choicecabin()
 
 # Checks if in "main" Module
 if __name__ == "__main__":
