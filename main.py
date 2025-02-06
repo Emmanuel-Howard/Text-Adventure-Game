@@ -84,9 +84,11 @@ def choicecabin():
             time.sleep(1)
             choiceattack = input("Do you parry or attack?: ").strip().lower()
             if choiceattack == "parry":
-                print("You parry")
+                print("You parry and lunge back at the bandit, striking him dead center.")
+                print("You vanquish the bandit and finally make it to the cabin entrance.")
             elif choiceattack == "attack"
-                print("You attack")
+                print("You sidestep and lunge back at the bandit, striking him dead center.")
+                print("You vanquish the bandit and finally make it to the cabin entrance.")
             else:
                print("Please enter 'parry' or 'attack'")
 
