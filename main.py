@@ -42,6 +42,7 @@ def choicecastle():
     print("The choosing is an important day. The day where you decide your element:"
           "Water, Fire, Earth, or Electricity")
     time.sleep(2)
+
     choicemerchant = input("Would you like to stop at a merchant's stall before "
           "commencing the choosing? (Yes / No): ").strip().lower()
     if choicemerchant == "yes":
@@ -55,16 +56,32 @@ def choicecastle():
         else:
             print("Please choose 'armorer' or 'healer'")
         return choicemerchant
+
     elif choicemerchant == "no":
         print("You ignore the market and enter the castle")
         return choicemerchant
     else:
         print("Please choose 'yes' or 'no'")
 
-
-
 def choicecabin():
-    print("You see the cabin")
+    print("As you walk toward the cabin, you cross merchants, soldiers, and others like you "
+          "arriving for the choosing.")
+    time.sleep(1)
+    print("The choosing is an important day. The day where you decide your element:"
+          "Water, Fire, Earth, or Electricity")
+    time.sleep(1)
+    print("All of a sudden, you hear a noise in the bushes...")
+    time.sleep(2)
+    print("'YIELD!' yells a ragged looking bandit, jumping out of the bushes.")
+
+    choicebandit = input("Do you fight the bandit or run away (fight / run)?: ").strip().lower()
+    if choicebandit == "fight":
+        print("You defeat the bandit. ")
+    elif choicebandit == "run":
+        print("You run back to the castle")
+    else:
+        print("Please choose 'fight' or 'run.")
+
 
 
 # Main game loop
