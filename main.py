@@ -76,7 +76,24 @@ def choicecabin():
 
     choicebandit = input("Do you fight the bandit or run away (fight / run)?: ").strip().lower()
     if choicebandit == "fight":
-        print("You defeat the bandit. ")
+        choiceweapon = input("Do you use your sword or your bow?: ").strip().lower()
+        if choiceweapon == "sword":
+            print("You draw your sword and circle the bandit.")
+            time.sleep(2)
+            print("HE LUNGES")
+            time.sleep(1)
+            choiceattack = input("Do you parry or attack?: ").strip().lower()
+            if choiceattack == "parry":
+                print("You parry")
+            elif choiceattack == "attack"
+                print("You attack")
+            else:
+               print("Please enter 'parry' or 'attack'")
+
+        elif choiceweapon == "bow":
+            print("You use your bow")
+        else:
+            print("Please enter 'sword' or 'bow'")
     elif choicebandit == "run":
         print("You run back to the castle")
     else:
