@@ -1,6 +1,7 @@
 # A text adventure game using conditional statements
 # Adding storyline + potential to add stats
 # Will also add pygame for sound effects
+# Need to continue working on bow attack
 
 # Importing necessary modules
 import time
@@ -64,15 +65,16 @@ def choicecastle():
         print("Please choose 'yes' or 'no'")
 
 def choicecabin():
-    print("As you walk toward the cabin, you cross merchants, soldiers, and others like you "
-          "arriving for the choosing.")
-    time.sleep(1)
+    print("As you walk toward the cabin, you cross merchants, soldiers ")
+    print("and others like you arriving for the choosing.")
+    time.sleep(2)
     print("The choosing is an important day. The day where you decide your element:"
           "Water, Fire, Earth, or Electricity")
-    time.sleep(1)
+    time.sleep(3)
     print("All of a sudden, you hear a noise in the bushes...")
-    time.sleep(2)
+    time.sleep(3)
     print("'YIELD!' yells a ragged looking bandit, jumping out of the bushes.")
+    time.sleep(1)
 
     choicebandit = input("Do you fight the bandit or run away (fight / run)?: ").strip().lower()
     if choicebandit == "fight":
@@ -86,7 +88,7 @@ def choicecabin():
             if choiceattack == "parry":
                 print("You parry and lunge back at the bandit, striking him dead center.")
                 print("You vanquish the bandit and finally make it to the cabin entrance.")
-            elif choiceattack == "attack"
+            elif choiceattack == "attack":
                 print("You sidestep and lunge back at the bandit, striking him dead center.")
                 print("You vanquish the bandit and finally make it to the cabin entrance.")
             else:
