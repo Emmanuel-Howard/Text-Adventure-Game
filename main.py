@@ -1,7 +1,7 @@
 # A text adventure game using conditional statements
 # Adding storyline + potential to add stats
 # Will also add pygame for sound effects
-# Need to continue working on bow attack
+# Need to continue working healer/armorer
 
 # Importing necessary modules
 import time
@@ -20,7 +20,8 @@ def intro():
         print("Please enter Yes or No.")
 
 def choice1():
-    print("You look down at the flight of steps you just climbed. 13 333 steps, if the legends are true.")
+    print("You look down at the flight of steps you just climbed. 13 333 steps, ")
+    print("if the legends are true.")
     time.sleep(2)
     print("You're pretty sure they are...")
     time.sleep(2)
@@ -37,8 +38,8 @@ def choice1():
             print("Please choose 'castle' or 'cabin'")
 
 def choicecastle():
-    print("As you arrive near the castle, you see merchants, soldiers, and others like you "
-          "arriving for the choosing.")
+    print("As you arrive near the castle, you see merchants, soldiers, and ")
+    print("others like you arriving for the choosing.")
     time.sleep(1)
     print("The choosing is an important day. The day where you decide your element:"
           "Water, Fire, Earth, or Electricity")
@@ -71,8 +72,8 @@ def choicecabin():
     print("As you walk toward the cabin, you cross merchants, soldiers ")
     print("and others like you arriving for the choosing.")
     time.sleep(2)
-    print("The choosing is an important day. The day where you decide your element:"
-          "Water, Fire, Earth, or Electricity")
+    print("The choosing is an important day. The day where you decide your element: ")
+    print("Water, Fire, Earth, or Electricity")
     time.sleep(3)
     print("All of a sudden, you hear a noise in the bushes...")
     time.sleep(3)
@@ -128,7 +129,11 @@ def choicecabin():
     else:
         print("Please choose 'fight' or 'run.")
 
+def castle():
+    print("Arrives at castle")
 
+def cabin():
+    print("Arrives at cabin")
 
 # Main game loop
 def main():
