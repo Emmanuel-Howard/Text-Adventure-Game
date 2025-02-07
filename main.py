@@ -65,6 +65,9 @@ def choicecastle():
         print("Please choose 'yes' or 'no'")
 
 def choicecabin():
+
+    banditalive = True
+
     print("As you walk toward the cabin, you cross merchants, soldiers ")
     print("and others like you arriving for the choosing.")
     time.sleep(2)
@@ -95,7 +98,23 @@ def choicecabin():
                print("Please enter 'parry' or 'attack'")
 
         elif choiceweapon == "bow":
-            print("You use your bow")
+            print("You sling your bow off your shoulder and nock an arrow.")
+            time.sleep(2)
+            print("Right before you shoot, the bandit throws his spear right at you.")
+            time.sleep(1)
+            choiceattack = input("Do you dodge or shoot?: ").strip().lower()
+            if choiceattack == "dodge":
+                print("You dodge his spear and shoot. The spear barely misses.")
+                time.sleep(2)
+                print("Your arrow hits him in the shoulder. He yells and runs away...")
+                time.sleep(2)
+                print("You vanquish the bandit and finally make it to the cabin entrance.")
+
+            elif choiceattack == "attack":
+                print("You sidestep and lunge back at the bandit, striking him dead center.")
+                print("You vanquish the bandit and finally make it to the cabin entrance.")
+            else:
+                print("Please enter 'parry' or 'attack'")
         else:
             print("Please enter 'sword' or 'bow'")
     elif choicebandit == "run":
